@@ -1,0 +1,21 @@
+﻿<Window x:Class="EmployeeListPageFrameApplicationRodionov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeListPageFrameApplicationRodionov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel> 
+       
+        
+        <StackPanel Margin="0,0,0,0" Height="340" VerticalAlignment="Top" >
+                <TextBlock Text="Меню" FontSize="17" FontWeight="Medium" Margin="0,0,0,10"/>
+                <Button Name="MainPageButton" Content="Главная страница" Click="OpenMainPage" Height="30" Margin="5,0,5,10"/>
+                <Button Name="EmployeeListButton" Content="Список сотрудников" Click="OpenEmployeeListPage" Height="30" Margin="5,0,5,10"/>
+        </StackPanel>
+            <Frame Name="MainFrame" Content="Выберите страницу:" Margin="0,0,0,0" Navigated="MainFrame_Navigated" />
+        </DockPanel>
+    </Grid>
+</Window>
